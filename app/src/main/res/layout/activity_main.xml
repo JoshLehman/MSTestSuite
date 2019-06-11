@@ -28,14 +28,23 @@
             android:id="@+id/practice_test_recyclerview"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="?attr/actionBarSize"
+            android:layout_marginBottom="0dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/spacer"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="RtlHardcoded"/>
+
+        <View
+            android:id="@+id/spacer"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
 
@@ -45,6 +54,7 @@
         android:layout_height="match_parent"
         android:background="@android:color/white"
         android:elevation="@dimen/bottom_sheet_elevation"
+        app:behavior_hideable="true"
         app:behavior_peekHeight="?attr/actionBarSize"
         app:layout_behavior="@string/bottom_sheet_behavior">
 

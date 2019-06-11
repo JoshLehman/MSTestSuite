@@ -11,7 +11,8 @@ There are four intent actions (in the category `android.intent.category.DEFAULT`
 - `edu.umd.cmsc436.{...}.action.HISTORY`
 
 The possible values in the curly braces are:
-- `tap`
+- `tap.hand`
+- `tap.foot`
 - `spiral`
 - `balance`
 - `level`
@@ -21,7 +22,7 @@ The possible values in the curly braces are:
 - `walk.indoors`
 - `symbol`
 
-For example, the intent to launch the Practice Mode of the Tap app would have the action `edu.umd.cmsc436.tap.action.PRACTICE`.
+For example, the intent to launch the Practice Mode of the Hand Tap app would have the action `edu.umd.cmsc436.tap.hand.action.PRACTICE`.
 
 `.PRACTICE` and `.HELP` don't have any arguments or expect any results.  Practice mode itself is relatively unstructured, and should let the patient practice as long as they want before exiting.  Help mode should display instructions or a guide to using the specific test, and then switch to Practice mode.
 
@@ -61,6 +62,6 @@ Please place APKs of your test apps in [this folder](https://drive.google.com/dr
 
 One row per patient, with columns:
 
-Patient ID | Date Assigned | Frequency | Column per Test App ... | Status
---- | --- | --- | --- | ---
-String | Google Sheets Datetime | Jenkins format (eventually) | Difficulty Integer (0 is disable, 1 is easiest) | Assigned, Ignored, or Completed
+Patient ID | Date Assigned | Frequency | Number of trials per app | Column per Test App ... | Status
+--- | --- | --- | --- | --- | ---
+String | DD/MM/YYYY HH:MM:SS (24 hour time) | Integer > 0 | Jenkins format (eventually) | Difficulty Integer (0 is disable, 1 is easiest) | Assigned, Ignored, or Completed

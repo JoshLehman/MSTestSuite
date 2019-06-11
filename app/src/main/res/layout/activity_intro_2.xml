@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linearLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="@dimen/fab_margin">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/linearLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/fab_margin">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +16,7 @@
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="40sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/patient_id"
@@ -27,7 +28,7 @@
         android:textAlignment="textStart"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/patient_id_box"
@@ -37,7 +38,7 @@
         android:inputType="text"
         android:outlineProvider="bounds"
         android:paddingBottom="10dp"
-        android:textSize="22sp" />
+        android:textSize="22sp"/>
 
     <TextView
         android:id="@+id/age"
@@ -49,14 +50,15 @@
         android:textAlignment="textStart"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/dob"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="date" />
+        android:inputType="date"
+        tools:ignore="LabelFor"/>
 
     <TextView
         android:id="@+id/patient_gender"
@@ -68,13 +70,13 @@
         android:textAlignment="textStart"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <Spinner
         android:id="@+id/gender_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp" />
+        android:textSize="30sp"/>
 
     <TextView
         android:id="@+id/handedness"
@@ -86,12 +88,12 @@
         android:textAlignment="textStart"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <Spinner
         android:id="@+id/handedness_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp" />
+        android:textSize="30sp"/>
 
 </LinearLayout>

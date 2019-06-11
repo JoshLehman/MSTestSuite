@@ -86,8 +86,7 @@ public class TrialMode {
      */
     public static Intent getResultIntent (float score) {
         Intent i = new Intent();
-        i.getExtras().putFloat(KEY_SCORE, score);
-
+        i.putExtra(KEY_SCORE, score);
         return i;
     }
 }

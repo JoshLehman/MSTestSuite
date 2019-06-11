@@ -37,6 +37,11 @@ public class ActionsAdapter extends RecyclerView.Adapter<ItemHolder> {
         notifyItemChanged(position+1);
     }
 
+    public void setActions (Action[] actions) {
+        mActions = actions;
+        notifyDataSetChanged();
+    }
+
     @Override
     public int getItemViewType(int position) {
         return position == 0 ? VIEWTYPE_HEADER : VIEWTYPE_ITEM;

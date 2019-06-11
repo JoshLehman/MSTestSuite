@@ -3,6 +3,7 @@
     <string name="loading_text">Loading prescription</string>
     <string name="content_description_text">Icon for current test</string>
     <string name="practice_mode_header_text">Practice Mode</string>
+    <string name="trial_mode_header_text">Trial Mode</string>
     <string name="peeked_begin_text">Daily</string>
     <string name="bottom_sheet_info_text">Daily tests are available</string>
     <string name="expanded_daily_button_text">Begin</string>
@@ -12,10 +13,7 @@
     <string name="main_actions_header">Welcome, %s</string>
 
     <string name="icon_for_current_test">Icon for current test</string>
-    <string name="intro_instructions">This application is designed to … \n\n There will be a
-        number of tests that you will complete on a given day.  When you do not have a selection
-        of tests to perform for a day, you can practice these tests through this app as well.
-        \n\n You also are able to track your progress among each test. </string>
+    <string name="intro_instructions">This application is designed to track your performance on various tests.\n\nEach time you open this application, if you have tests assigned by your doctor, there will be a pop-up asking you to complete them. If you choose not to complete them in that given moment, you can come back to them by clicking the DAILY button. You also have the option to practice the various tests prescribed. You are also able to track your progress within each test.\n\nIf there are problems when completing your test, you can go to the feedback section to report the problems, which will be sent to your doctor.</string>
     <string name="introscreen_continue">ENTER</string>
     <string name="introscreen_next_text">NEXT</string>
     <string name="welcome">Welcome to the Test Suite</string>
@@ -37,4 +35,9 @@
         <item>FEMALE</item>
         <item>OTHER</item>
     </string-array>
+
+    <string name="prescription_spreadsheet_id">1fSYqht4lxfr9RwV_JoikJvh_X8abZrPsjaadVMuVVLw</string>
+    <string name="test_apk_folder_id">0B0tPbEe1hFoEWGc4YllWT3hjQ1E</string>
+    <string name="scores_spreadsheet_id">1YvI3CjS4ZlZQDYi5PaiA7WGGcoCsZfLoSFM0IdvdbDU</string>
+    <string name="trials_completed_text">Trials complete</string>
 </resources>
